@@ -9,7 +9,7 @@
     </head>
     <body>
         <div>
-            <button onclick="(async () => {alert(1);})();">Fetch and alert google</button>
+            <button onclick="(async () => {var req = await fetch('https://google.com');alert(req.url)})();">Fetch and alert google</button>
         </div>
         <script>
             if('serviceWorker' in navigator) {
