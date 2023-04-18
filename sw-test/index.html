@@ -8,7 +8,9 @@
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     </head>
     <body>
-        <div class="container"></div>
+        <div>
+            <button onclick="(async () => {alert(1);})();">Fetch and alert google</button>
+        </div>
         <script>
             if('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/service-worker.js');
